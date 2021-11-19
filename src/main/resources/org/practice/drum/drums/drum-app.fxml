@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1450.0" spacing="85.0" style="-fx-background-color: #283149;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.practice.drum.drums.DrumApp">
+   <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="30.0" style="-fx-text-fill: #DBEDF3; -fx-effect: dropshadow( gaussian, #DA0463, 5, 0, 3, 0);" text="Drum 🥁 App" textAlignment="CENTER" textFill="#dbedf3" VBox.vgrow="NEVER">
+      <font>
+         <Font name="Open Sans Semibold" size="51.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="200.0" prefWidth="1200.0" spacing="10.0">
+      <Label fx:id="wLabel" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15; -fx-background-radius: 25; -fx-background-color: WHITE;" text="w" textFill="#da0463">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="w" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/tom1.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="aLabel" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15; -fx-background-color: WHITE; -fx-background-radius: 25;" text="a" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="a" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/tom2.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="sLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;" text="s" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="s" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/tom3.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="dLabel" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;" text="d" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="d" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/tom4.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="jLabel" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;" text="j" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="j" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/snare.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" minX="8.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="kLabel" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;" text="k" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="k" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/crash.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="lLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;" text="l" textFill="#da0463">
+         <graphic>
+            <ImageView fx:id="l" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/kick.png" />
+               <viewport>
+                  <Rectangle2D height="120.0" width="120.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+   </HBox>
+   <Label text="Made With ❤ by c2p." textFill="#dbedf3">
+      <font>
+         <Font name="SansSerif Regular" size="15.0" />
+      </font>
+   </Label>
+</VBox>
