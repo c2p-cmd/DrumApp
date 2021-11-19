@@ -23,11 +23,12 @@ public class DrumsMain extends Application implements Runnable {
 
     public static void main(String[] args) {
         DrumsMain.args = args;
-        new Thread(new DrumsMain()).start();
+        new Thread(new DrumsMain(), "\uD83E\uDD41 Thread").start();
     }
 
     @Override
     public void run() {
+        System.out.println("Launching " + Thread.currentThread().getName());
         Application.launch(args);
     }
 }

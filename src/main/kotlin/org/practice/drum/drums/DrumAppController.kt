@@ -8,8 +8,9 @@ import javafx.scene.image.ImageView
 import java.net.URL
 import java.util.*
 
-const val OUT_OF_FOCUS_STYLE = "-fx-background-color: WHITE; -fx-background-radius: 25; -fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;"
-const val FOCUS_STYLE        = "-fx-background-color: WHITE; -fx-background-radius: 25; -fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15; -fx-opacity: 0.4;"
+const val OUT_OF_FOCUS_STYLE = "-fx-background-color: WHITE; -fx-background-radius: 25; " +
+                               "-fx-border-color: #404B69; -fx-border-width: 10px; -fx-border-radius: 15;"
+const val IN_FOCUS_STYLE     = "$OUT_OF_FOCUS_STYLE -fx-opacity: 0.4;"
 
 class DrumApp : Initializable{
     @FXML
@@ -45,13 +46,13 @@ class DrumApp : Initializable{
             // Mouse Event Handler
             drumLabel.setOnMousePressed {
                 drumSounds[drumLabel.text.lowercase()]?.play()
-                drumMap[drumLabel.text.lowercase()]?.style = FOCUS_STYLE
+                drumMap[drumLabel.text.lowercase()]?.style = IN_FOCUS_STYLE
             }
             drumLabel.setOnMouseReleased {
                 drumMap[drumLabel.text.lowercase()]?.style = OUT_OF_FOCUS_STYLE
             }
             drumLabel.setOnMouseEntered {
-                drumMap[drumLabel.text.lowercase()]?.style = FOCUS_STYLE
+                drumMap[drumLabel.text.lowercase()]?.style = IN_FOCUS_STYLE
             }
             drumLabel.setOnMouseExited {
                 drumMap[drumLabel.text.lowercase()]?.style = OUT_OF_FOCUS_STYLE
@@ -62,7 +63,7 @@ class DrumApp : Initializable{
 
             drumLabel.setOnKeyPressed { keyEvent ->
                 drumSounds[keyEvent.text.lowercase()]?.play()
-                drumMap[keyEvent.text.lowercase()]?.style = FOCUS_STYLE
+                drumMap[keyEvent.text.lowercase()]?.style = IN_FOCUS_STYLE
             }
             drumLabel.setOnKeyReleased { keyEvent ->
                 drumMap[keyEvent.text.lowercase()]?.style = OUT_OF_FOCUS_STYLE

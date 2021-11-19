@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1450.0" spacing="85.0" style="-fx-background-color: #283149;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.practice.drum.drums.DrumApp">
-   <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="30.0" style="-fx-text-fill: #DBEDF3; -fx-effect: dropshadow( gaussian, #DA0463, 5, 0, 3, 0);" text="Drum 🥁 App" textAlignment="CENTER" textFill="#dbedf3" VBox.vgrow="NEVER">
+   <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="30.0" style="-fx-text-fill: #DBEDF3; -fx-effect: dropshadow( gaussian, #DA0463, 5, 0, 3, 0);" text=" Drum 🥁 App " textAlignment="CENTER" textFill="#dbedf3" VBox.vgrow="NEVER">
       <font>
          <Font name="Open Sans Semibold" size="51.0" />
       </font>
